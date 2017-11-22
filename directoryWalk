@@ -1,0 +1,19 @@
+import exifread, csv, os
+
+# Figure out which tags we want to read
+with open('exiftags.cfg','r') as f:
+   reader = csv.reader(f)
+   exifTagList = list(reader)
+
+for file in os.listdir("\images"):
+   if file.endswith(".jpg"):
+      o = open(file, "r+b")
+#      for p in range(len(exifTagList)):
+#         tmpString1 = the_list[p]
+#         tmpString1 = str(tmpString1)
+#         tmpString1 = tmpString1[2:-2]
+#         tags = exifread.process_file(o)
+#         if tmpString1 in tags :
+#             print (tmpString1, " is ", (tags[tmpString1]))
+         else :
+   else :
